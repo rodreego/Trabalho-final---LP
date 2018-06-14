@@ -9,6 +9,7 @@ package login;
  *
  * @author mfsalomao
  */
+import test.TelaPrincipal;
 import javax.swing.*;
 public class JPanelLogin extends javax.swing.JPanel {
     
@@ -237,7 +238,8 @@ public class JPanelLogin extends javax.swing.JPanel {
                 MenuProfissionalTeste teste = new MenuProfissionalTeste();
                     }else{
                         if (succeeded && jTextField1.getText().trim().length() == 14) {
-                            MenuEmpresaTeste teste = new MenuEmpresaTeste();
+                            TelaPrincipal menuEmpresa = new TelaPrincipal();
+                            menuEmpresa.setVisible(true);
                         }
                     }
     }//GEN-LAST:event_jButton4ActionPerformed
